@@ -33,7 +33,7 @@ endif
 OS=$(shell uname -s)
 
 # Get OS architecture
-OSARCH=$(shell uname -m)
+OSARCH=amd64
 ifeq ($(OSARCH),x86_64)
 GOARCH?=amd64
 else ifeq ($(OSARCH),x64)
